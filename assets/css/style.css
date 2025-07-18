@@ -33,8 +33,67 @@ html{
     color: black;
 }
 /*hero section */
-#hero-section{
-background-image:url(../img/hero-section-background-img.avif);
-width: 100%;
-height: 100vh;
+#content {
+    margin-top: 46.5px;
+}
+
+#hero-section {
+    background-image: url(../img/hero-section-background-img.avif);
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.hero-text{
+    position: absolute;
+    top: 30%;
+    left: 15%;
+}
+.hero-text h1{
+    margin: 15px 25px
+}
+i{
+    font-size: 30px;
+    margin: 30px 25px; 
+}
+.hero-text a{
+    text-decoration: none;
+}
+/* ...existing code... */
+.ti-github,
+.ti-linkedin {
+    background: none !important; /* Remove background */
+    color: rgb(0, 0, 0); /* Example: GitHub purple, change as you like */
+    transition: color 0.2s;
+}
+
+.ti-linkedin {
+    color: #0077b5; /* LinkedIn blue */
+}
+
+.hero-text a:focus,
+.hero-text a:active {
+    outline: none;
+    color: inherit;
+    background: none !important;
+    box-shadow: none;
+}
+/*about section */
+
+#about-section h2{
+text-align: center;
+font-size: 35px;
+}
+
+#about-section h2 i {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+/*contact section */
+#contact-section{
+display: flex;
+justify-content: center;
+align-items: center;
 }

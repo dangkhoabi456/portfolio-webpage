@@ -15,7 +15,8 @@ html{
    right: 0;
    height: 46.5px;
    background-color: black;
-   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); 
+   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+   z-index: 1000; /* keep navigation bar on top */ 
 }
 #navigation-bar li{
     display :inline-block;
@@ -92,8 +93,52 @@ font-size: 35px;
     margin-right: 10px;
 }
 /*contact section */
-#contact-section{
-display: flex;
-justify-content: center;
-align-items: center;
+#contact-section h2{
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* #contact-section form{
+    width: 45%;
+    height: 50vh;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}*/
+.contact-field{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.contact-form-flex {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    width: 700px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    background: #fff;
+}
+
+.contact-img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.form-fields {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+}
+
+.form-fields input,
+.form-fields textarea {
+    margin: 10px 0;
 }

@@ -211,6 +211,29 @@ color: white;
   width: 100%;
   box-sizing: border-box;
 }
+/*footer*/
+#footer{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    background-color: black;
+}
+.footer-greetings,
+.footer-links,
+.footer-contact-info {
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+}
+#footer li{
+    list-style: none;
+}
+#footer li:hover a{
+    color: black;
+    background-color: #db9112;
+}
 /*responsive design */
 /* Hide menu button on desktop */
 #menu-toggle {

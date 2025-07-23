@@ -248,6 +248,9 @@ i{
     font-size: 20px;
     margin-top: 5px;
 }
+.contact-form-flex button {
+border-radius: 10px;
+}
 input,
 textarea {
 height: 45px;
@@ -266,7 +269,29 @@ button{
 text-decoration: none;
 color: white;
 }
-
+/*footer*/
+#footer{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    background-color: black;
+}
+.footer-greetings,
+.footer-links,
+.footer-contact-info {
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+}
+#footer li{
+    list-style: none;
+}
+#footer li:hover a{
+    color: black;
+    background-color: #db9112;
+}
 /*responsive design */
 @media (max-width: 853px) {
     #navigation-bar {

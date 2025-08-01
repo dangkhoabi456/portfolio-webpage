@@ -196,6 +196,35 @@ i{
     justify-content: flex-end;
     align-items: flex-end;
 }*/
+/*skills section */
+#skills-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px
+}
+#skills-section h2 {
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+}
+#skills-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px auto 0;
+    max-width: 800px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+    border-radius: 20px;
+    gap: 10px;
+    padding: 20px;
+    width: 800px;
+}
+#skills-card li{
+    list-style: none;
+    font-size: 20px;
+    margin: 10px 0;
+}
 /*contact section */
 #contact-section h2{
     text-align: center;
@@ -252,7 +281,7 @@ button{
     width: 100px;
     background-color: rgb(111, 162, 212);
     color: white;
-    border-radius: 2px;
+    border-radius: 4px;
 
 }
 .form-fields a {
@@ -268,9 +297,12 @@ color: white;
   width: 100%;
   box-sizing: border-box;
 }
+#contact-section{
+    background-color: #e5ecfb;
+    padding-bottom: 20px;
+}
 /*footer*/
 #footer{
-    margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -286,6 +318,10 @@ color: white;
 }
 #footer li{
     list-style: none;
+}
+#footer a{
+    text-decoration: none;
+    color: white;
 }
 #footer li:hover a{
     color: black;

@@ -94,7 +94,9 @@ i{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 40px;
+    padding-top: 40px;
+    background-color: #c2c7e6;
+    padding-bottom: 40px;
 }
 
 #about-section h2 {
@@ -201,7 +203,8 @@ i{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 40px
+    padding: 40px 0;
+    background-color: #3e3c3b;
 }
 #skills-section h2 {
     text-align: center;
@@ -218,19 +221,29 @@ i{
     border-radius: 20px;
     gap: 10px;
     padding: 20px;
-    width: 800px;
+    width: 100%;
+    background-color: #6c40b8;
 }
 #skills-card li{
+    font-weight: bold;
+    color: #cdcd29;
     list-style: none;
     font-size: 20px;
     margin: 10px 0;
 }
+#skills-section .highlight {
+    color: #ffeb3b; /* Yellow accent */
+    font-weight: bold;
+}
+#skills-section h2 span {
+    color: black
+}
+
 /*contact section */
 #contact-section h2{
     text-align: center;
     font-size: 35px;
     font-weight: bold;
-    margin-top: 20px;
 }
 .contact-field{
     display: flex;
@@ -268,7 +281,7 @@ i{
 #contact-section p{
     text-align: center;
     font-size: 20px;
-    margin-top: 5px;
+    padding: 40px 0;
 }
 input,
 textarea {
@@ -404,6 +417,16 @@ color: white;
         margin: 20px auto;
         display: block;
     }
+    #education-section .education-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    #education-section img {
+        width: 80vw;
+        max-width: 250px;
+        margin-bottom: 20px;
+    }
     .contact-form-flex {
         flex-direction: column;
         width: 95vw;
@@ -428,7 +451,9 @@ color: white;
         font-size: 18px;
     }
     #about-section h2,
-    #contact-section h2 {
+    #contact-section h2,
+    #skills-section h2,
+    #education-section h2 {
         font-size: 22px;
     }
     .form-fields input,

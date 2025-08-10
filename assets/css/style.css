@@ -33,6 +33,21 @@ html{
     background-color: #db9112;
     color: black;
 }
+/* Hide menu button on desktop */
+#menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    left: 10px;
+    top: 8px;
+    z-index: 1100;
+}
+#menu-toggle:hover {
+    background-color: #db9112;
+}
 /*hero section */
 #content {
     margin-top: 46.5px;
@@ -198,13 +213,85 @@ i{
     justify-content: flex-end;
     align-items: flex-end;
 }*/
+
+/*education section */
+#education-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    background-color: #c2c7e6;
+    padding-bottom: 40px;
+}
+
+#education-section h2 {
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+#education-section .highlight {
+    color: #6a1b9a; /* Purple accent */
+    font-weight: bold;
+}
+
+.education-card {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+    padding: 40px 50px;
+    gap: 40px;
+    margin-top: 30px;
+    max-width: 800px;
+    width: 100%;
+}
+
+.education-card img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+
+.education-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.education-text h3 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.education-text .role {
+    font-size: 18px;
+    color: #6a1b9a;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.education-text p {
+    font-size: 18px;
+    margin: 0;
+}
+
+.education-text a {
+    color: #0077b5;
+    text-decoration: none;
+}
 /*skills section */
 #skills-section {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 40px 0;
-    background-color: #3e3c3b;
+    background-color: #deedf5;
 }
 #skills-section h2 {
     text-align: center;
@@ -222,17 +309,17 @@ i{
     gap: 10px;
     padding: 20px;
     width: 100%;
-    background-color: #6c40b8;
+    background-color: #74a2be;
 }
 #skills-card li{
     font-weight: bold;
-    color: #cdcd29;
+    color: #b82b2b;
     list-style: none;
     font-size: 20px;
     margin: 10px 0;
 }
 #skills-section .highlight {
-    color: #ffeb3b; /* Yellow accent */
+    color: #2a3ebe;
     font-weight: bold;
 }
 #skills-section h2 span {
@@ -243,6 +330,10 @@ i{
 #contact-section h2{
     text-align: center;
     font-size: 35px;
+    font-weight: bold;
+}
+#contact-section .highlight {
+    color: #6a1b9a; /* Purple accent */
     font-weight: bold;
 }
 .contact-field{
@@ -341,21 +432,6 @@ color: white;
     background-color: #db9112;
 }
 /*responsive design */
-/* Hide menu button on desktop */
-#menu-toggle {
-    display: none;
-    background: none;
-    border: none;
-    color: white;
-    font-size: 30px;
-    position: absolute;
-    left: 10px;
-    top: 8px;
-    z-index: 1100;
-}
-#menu-toggle:hover {
-    background-color: #db9112;
-}
 
 /* Responsive styles */
 @media (max-width: 853px) {
@@ -377,11 +453,10 @@ color: white;
         display: block;
     }
     #header {
-        position: relative;
+        position: fixed;
     }
     .nav-item a {
-        display: flex;
-        align-items: center;
+
         padding: 16px;
         font-size: 20px;
     }
@@ -390,7 +465,7 @@ color: white;
     }
 
     #hero-section {
-        height: 60vh;
+        height: 45vh;
         min-height: 350px;
         background-position: center;
     }
